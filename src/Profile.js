@@ -7,8 +7,8 @@ class Profile extends React.Component {
       Person: {
         imgSrc: "profile.jpg",
         fullName: "Rania Cherif",
-        bio: "Developper FullStack (MEARN)",
-        profession: "Developper",
+        bio: "Nabeul, Tunisie",
+        profession: "Developper FullStack (MEARN)",
         shows: true,
         mountingTime: 0,
       },
@@ -38,8 +38,8 @@ class Profile extends React.Component {
             <span class="pro">PRO</span>
             <img className="round" src={this.state.Person.imgSrc}></img>
             <h3>Hello i'm : {this.state.Person.fullName}</h3>
-            <h6>My bio is : {this.state.Person.bio}</h6>
-            <h6>My last profession is : {this.state.Person.profession}</h6>
+            <h6>I'm from : {this.state.Person.bio}</h6>
+            <h6>My profession is : {this.state.Person.profession}</h6>
             <h3>Time:{this.state.mountingTime}</h3>
             <div class="skills">
               <h6>Skills</h6>
