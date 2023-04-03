@@ -1,5 +1,5 @@
 import React from "react";
-import "./Car.css";
+import "./profile.css";
 class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -37,33 +37,9 @@ class Profile extends React.Component {
         {this.state.shows ? (
           <>
             <span class="pro">PRO</span>
-            <h2>Hello i'm : {this.state.Person.fullName}</h2>
-            <h3>My bio is : {this.state.Person.bio}</h3>
-            <h3 style={{ color: "bisque" }}>
-              My last profession is : {this.state.Person.profession}
-            </h3>
-            <footer>
-              <p>
-                Created with <i class="fa fa-heart"></i> by
-                <a target="_blank" href="https://florin-pop.com">
-                  Florin Pop
-                </a>
-                - Read how I created this
-                <a
-                  target="_blank"
-                  href="https://florin-pop.com/blog/2019/04/profile-card-design"
-                >
-                  here
-                </a>
-                - Design made by
-                <a
-                  target="_blank"
-                  href="https://dribbble.com/shots/6276930-Profile-Card-UI-Design"
-                >
-                  Ildiesign
-                </a>
-              </p>
-            </footer>
+            <h3>Hello i'm : {this.state.Person.fullName}</h3>
+            <h6>My bio is : {this.state.Person.bio}</h6>
+            <h6>My last profession is : {this.state.Person.profession}</h6>
             <img classeName="round" src={this.state.Person.imgSrc}></img>
             <h3>Time:{this.state.mountingTime}</h3>
             <div class="skills">
@@ -80,7 +56,7 @@ class Profile extends React.Component {
             </div>
           </>
         ) : null}
-        <div class="buttons" onClick={this.change}>
+        <div class="button" onClick={this.change}>
           <button class="primary">Profile</button>
           <button class="primary ghost">Follow Me</button>
         </div>
