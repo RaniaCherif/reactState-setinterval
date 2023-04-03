@@ -14,15 +14,13 @@ class Profile extends React.Component {
       },
     };
   }
+  /*****DidMount******/
   componentDidMount() {
     setInterval(() => {
       this.setState({ mountingTime: (this.state.mountingTime += 1) });
     }, 1000);
   }
-
-  // componentDidMount() {
-  // this.setState({ brand: "peugot" });
-  //}
+  /*****DidUpdate******/
   componentDidUpdate() {
     console.log("hello");
   }
