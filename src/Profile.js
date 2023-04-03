@@ -5,10 +5,9 @@ class Profile extends React.Component {
     super(props);
     this.state = {
       Person: {
+        imgSrc: "profile.jpg",
         fullName: "Rania Cherif",
         bio: "Developper FullStack (MEARN)",
-        imgSrc:
-          "https://th.bing.com/th/id/OIP.LSXD1bPd5DcA_UIJ2QeDewHaEK?pid=ImgDet&rs=1",
         profession: "Developper",
         shows: true,
         mountingTime: 0,
@@ -37,10 +36,10 @@ class Profile extends React.Component {
         {this.state.shows ? (
           <>
             <span class="pro">PRO</span>
+            <img className="round" src={this.state.Person.imgSrc}></img>
             <h3>Hello i'm : {this.state.Person.fullName}</h3>
             <h6>My bio is : {this.state.Person.bio}</h6>
             <h6>My last profession is : {this.state.Person.profession}</h6>
-            <img classeName="round" src={this.state.Person.imgSrc}></img>
             <h3>Time:{this.state.mountingTime}</h3>
             <div class="skills">
               <h6>Skills</h6>
