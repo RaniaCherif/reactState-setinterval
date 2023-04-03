@@ -15,7 +15,11 @@ class Profile extends React.Component {
       },
     };
   }
-
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({ mountingTime: (this.state.mountingTime += 1) });
+    }, 1000);
+  }
 
   // componentDidMount() {
   // this.setState({ brand: "peugot" });
