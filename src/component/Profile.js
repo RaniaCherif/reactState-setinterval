@@ -51,11 +51,11 @@ class Profile extends React.Component {
                 <li>Node</li>
               </ul>
             </div>
+            <button class="primary ghost">Follow Me</button>
           </>
         ) : null}
         <div class="button" onClick={this.change}>
           <button class="primary">Profile</button>
-          <button class="primary ghost">Follow Me</button>
         </div>
       </div>
     );
